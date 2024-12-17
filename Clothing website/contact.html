@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactatine - Magazinul de incaltaminte Jilaveanu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <header>
+              <h1>Contactatine</h1>
+                <nav>
+                 <ul>
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="about.html">Despre noi</a></li>
+                    <li><a href="products.html">Produse</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">Intrebari frecvente</a></li>
+                    <li><a href="login.html">Logare/Inregistrare</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section id="contact">
+                    <h2>Contacteaza-ne</h2>
+                    <p>Daca aveti nevoie de ajutor in ceea ce priveste site-ul web, lasati-ne un mesaj:</p>
+                    <form action="submit_form.php" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nume:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Prenume:</label>
+                            <input type="text" id="prenume" name="prenume" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Adresă:</label>
+                            <input type="text" id="adresa" name="adresa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Varsta:</label>
+                            <input type="text" id="varsta" name="varsta" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Telefon:</label>
+                            <input type="text" id="telefon" name="telefon" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Trimiteti</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+            <footer>
+                <p>&copy; 2024 Magazinul de incaltaminte Jilaveanu. Toate drepturile rezervate.</p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/nike/" target="_blank" aria-label="Instagram">
+                        <img src="images/instagram.jpg" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/nike" target="_blank" aria-label="Facebook">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </footer>
+    </div>
+</body>
+</html>

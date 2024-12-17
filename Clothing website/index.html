@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acasa - Magazinul de incaltaminte Jilaveanu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+    <div class="container">
+        <div class="content">
+            <header>
+                <h1>Bine ati venit la Magazinul de incaltaminte Jilaveanu</h1>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="about.html">Despre noi</a></li>
+                    <li><a href="products.html">Produse</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">Intrebari frecvente</a></li>
+                    <li><a href="login.html">Logare/Inregistrare</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                  </ul>
+              </nav>
+            </header>
+
+         <div class="carousel-intro">
+               <h2>Descoperă cele mai noi modele de încălțăminte!</h2>
+              <p>Alege dintr-o gamă variată de stiluri și culori, perfect adaptate pentru orice ocazie.</p>
+         </div>
+         <div class="carousel">
+               <div class="carousel-images">
+                    <div class="carousel-image"><img src="images/airjordan4.png" alt="Image 1"></div>
+                    <div class="carousel-image"><img src="images/nikeair1.png" alt="Image 2"></div>
+                    <div class="carousel-image"><img src="images/nikeairmaxplus.png" alt="Image 3"></div>
+                    <div class="carousel-image"><img src="images/nikedunklow.png" alt="Image 4"></div>
+                    <div class="carousel-image"><img src="images/nikedunkhigh.png" alt="Image 5"></div>
+             </div>
+              <div class="carousel-controls">
+                  <button class="control" onclick="prevSlide()">&#10094;</button>
+                  <button class="control" onclick="nextSlide()">&#10095;</button>
+              </div>
+         </div>
+    
+            <script>
+               let currentIndex = 0;
+    
+              function showSlide(index) {
+                 const slides = document.querySelector('.carousel-images');
+                 const totalSlides = document.querySelectorAll('.carousel-image').length;
+                 if (index >= totalSlides) {
+                     currentIndex = 0;
+                 } else if (index < 0) {
+                     currentIndex = totalSlides - 1;
+                 } else {
+                     currentIndex = index;
+                 }
+                 slides.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+             }
+
+             function nextSlide() {
+                 showSlide(currentIndex + 1);
+             }
+
+             function prevSlide() {
+                 showSlide(currentIndex - 1);
+             }
+
+             setInterval(nextSlide, 5000);
+            </script>
+        </div>
+         <footer>
+               <p>&copy; 2024 Magazinul de incaltaminte Jilaveanu. Toate drepturile rezervate.</p>
+             <div class="social-media">
+                   <a href="https://www.instagram.com/nike/" target="_blank" aria-label="Instagram">
+                       <img src="images/instagram.jpg" alt="Instagram">
+                   </a>
+                   <a href="https://www.facebook.com/nike" target="_blank" aria-label="Facebook">
+                       <img src="images/facebook.png" alt="Facebook">
+                   </a>
+             </div>
+         </footer>
+    </div>
+</body>
+</html>

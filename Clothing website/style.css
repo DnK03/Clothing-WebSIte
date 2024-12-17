@@ -1,0 +1,329 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Header and Navigation */
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+
+/* carousel styling*/
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.carousel-intro {
+    text-align: center; /* Center text */
+    margin: 20px 0; /* Spațiu deasupra și dedesubtul textului */
+    padding: 10px; /* Padding pentru text */
+    background-color: #f8f8f8; /* Fundal deschis pentru text */
+    border-radius: 5px; /* Colțuri rotunjite */
+}
+
+.carousel-intro h2 {
+    margin: 0; /* Elimină marginea implicită */
+    font-size: 24px; /* Dimensiune font pentru titlu */
+}
+
+.carousel-intro p {
+    margin: 10px 0 0; /* Margine pentru paragraful de sub titlu */
+    font-size: 16px; /* Dimensiune font pentru paragraf */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px; /* Setează o înălțime fixă pentru toate imaginile */
+    object-fit: cover; /* Asigură-te că imaginile se vor adapta la dimensiune fără a distorsiona aspectul */
+    border-radius: 10px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.control {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asigură că containerul ocupă întreaga înălțime a ferestrei */
+}
+
+.content {
+    flex: 1; /* Permite conținutului să ocupe tot spațiul disponibil */
+    padding: 20px;
+}   
+
+.videoclip {
+    text-align: center; /* Center text */
+    margin: 20px 0; /* Spațiu deasupra și dedesubtul textului */
+    padding: 10px; /* Padding pentru text */
+    background-color: #f8f8f8; /* Fundal deschis pentru text */
+    border-radius: 5px; /* Colțuri rotunjite */
+}
+
+
+/* Footer styling */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    background-color: #f8f8f8; /* Background color for footer */
+    padding: 10px 0; /* Padding for footer */
+}
+
+
+/* Style for product list */
+#product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto new rows */
+    justify-content: space-between; /* Add space between items */
+    gap: 20px; /* Space between products */
+    min-height: 100vh;
+}
+
+/* Style for each product */
+#product-list .product {
+    flex: 1 1 calc(25% - 20px); /* Make each product take 25% of the row, minus some space */
+    box-sizing: border-box; /* Ensure padding and margin don’t affect width */
+    margin-bottom: 20px; /* Add space between rows */
+    text-align: center; /* Center align the product content */
+}
+
+/* Style for product images */
+#product-list .product img {
+    width: 100%; /* Make the image fill the width of the product container */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Crop images to fit inside the box without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.center-text {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 20px;
+}
+
+
+
+/* FAQ section styling */
+#faq-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text for questions and answers */
+    min-height: 100vh;
+}
+
+#faq-section ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit width for better presentation */
+}
+
+#faq-section li {
+    margin-bottom: 15px; /* Space between questions */
+}
+
+strong {
+    display: block; /* Ensure questions are displayed as block elements */
+    margin-bottom: 5px; /* Space between question and answer */
+}
+
+
+
+/* Login/Register form styles */
+#login-register {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+}
+
+.form-group {
+    margin: 0; /* Remove margin between fields */
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit width for better presentation */
+}
+
+label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Space between label and input */
+    text-align: left; /* Align label text to the left */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Make input fields full width */
+    padding: 8px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+
+/* Contact form styles */
+#contact {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 400px; /* Limit width for better presentation */
+}
+
+.form-group {
+    margin: 10px 0; /* Space between input fields */
+    width: 100%; /* Full width */
+}
+
+label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Space between label and input */
+    text-align: left; /* Align label text to the left */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Make input fields full width */
+    padding: 8px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+button {
+    padding: 10px 15px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+/* Register form styles */
+#register {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+}
+
+.register-form {
+    width: 100%;
+    max-width: 400px; /* Limit width for better presentation */
+}
+
+.form-group {
+    margin: 10px 0; /* Space between input fields */
+    width: 100%; /* Full width */
+}
+
+label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Space between label and input */
+    text-align: left; /* Align label text to the left */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Make input fields full width */
+    padding: 8px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+button {
+    padding: 10px 15px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover img {
+    transform: scale(1.1);
+}
